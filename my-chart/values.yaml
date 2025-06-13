@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: shrirang451/amazon-prime
+  repository: nginx
   tag: latest
   pullPolicy: IfNotPresent
 
@@ -9,5 +9,5 @@ service:
   port: 3000
 
 app:
-  name: pandacloud-app
-  containerName: pandacloud-container
+  name: nginx-app
+  containerName: nginx-container
